@@ -24,7 +24,7 @@ private float PowerUpStrength = 15.0f;
     void Update()
     {
         float forwardInput = Input.GetAxis("Vertical");
-        float forceMultiplier = 0.5f;
+        float forceMultiplier = 0.25f;
         playerRb.AddForce(focalPoint.transform.forward * speed * forwardInput * forceMultiplier);
         PowerUpIndicator.transform.position = transform.position + new Vector3(0,-0.5f, 0);
     }
